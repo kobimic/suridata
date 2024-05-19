@@ -45,7 +45,7 @@ def main():
     data = read_employee_file(EMPLOYEE_FILENAME)
 
     filtered_data = filter_duplicates(data)
-    # random.shuffle(filtered_data)
+    random.shuffle(filtered_data)
     paired_employees = create_pairs(filtered_data)
 
     print(paired_employees)
